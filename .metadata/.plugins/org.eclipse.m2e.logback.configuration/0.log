@@ -1739,3 +1739,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration ChecklistExample re
 2020-02-14 12:27:38,682 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2020-02-14 12:27:38,690 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
 2020-02-14 12:27:38,692 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2020-02-14 12:27:38,698 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\JBPM-FULL\jbpm-installer\workspace\JBPM\src\test\resources
