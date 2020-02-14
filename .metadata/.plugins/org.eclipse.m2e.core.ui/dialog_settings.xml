@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\JBPM\PROYECTOS\jbpm-playground-master\jbpm-simple-rest-client"/>
+			<item value="C:\JBPM\PROYECTOS\jbpm-playground-master\customer-relationships"/>
 			<item value="C:\JBPM\PROYECTOS\jbpm-master\jbpm-examples"/>
 			<item value="C:\JBPM\PROYECTOS\jbpm-master\jbpm-bpmn2-emfextmodel"/>
 			<item value="C:\JBPM\PROYECTOS\jbpm-master\jbpm-case-mgmt\jbpm-case-mgmt-api"/>
@@ -14,6 +28,19 @@
 			<item value="[artifactId]-[version]"/>
 			<item value="[groupId].[artifactId]"/>
 			<item value="[groupId].[artifactId]-[version]"/>
+		</list>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="Ejemplo"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="Ejemplo"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
 		</list>
 	</section>
 </section>

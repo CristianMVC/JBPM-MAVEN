@@ -21,4 +21,8 @@
 <fullyQualifiedTypeName name="javax.persistence.Persistence"/>
 <fullyQualifiedTypeName name="org.kie.api.runtime.manager.RuntimeEnvironmentBuilder"/>
 <fullyQualifiedTypeName name="org.kie.api.runtime.manager.RuntimeManagerFactory"/>
+<fullyQualifiedTypeName name="org.kie.api.runtime.conf.ClockTypeOption"/>
+<fullyQualifiedTypeName name="org.kie.api.builder.model.KieSessionModel"/>
+<fullyQualifiedTypeName name="org.drools.runtime.conf.ClockTypeOption"/>
+<fullyQualifiedTypeName name="antlr.collections.List"/>
 </qualifiedTypeNameHistroy>

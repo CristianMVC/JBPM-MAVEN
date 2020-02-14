@@ -16,4 +16,7 @@
 		<item value="Aggregate for window 1580740550830" key="ResourceWorkingSetFilter.STORE_WORKING_SET"/>
 		<item value="1" key="ResourceViewer.STORE_SORT_TYPE"/>
 	</section>
+	<section name="org.eclipse.ui.internal.ide.dialogs.ProjectContentsLocationArea">
+		<item value="C:\JBPM-FULL\jbpm-installer\workspace\Ejemplo" key="OUTSIDE_LOCATION"/>
+	</section>
 </section>
