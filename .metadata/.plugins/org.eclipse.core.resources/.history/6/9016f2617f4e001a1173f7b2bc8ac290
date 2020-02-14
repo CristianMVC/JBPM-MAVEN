@@ -1,0 +1,5 @@
+<kmodule xmlns="http://jboss.org/kie/6.3.0/kmodule">
+
+  <kbase name="kbase" packages="com.vendedor"/>
+
+</kmodule>

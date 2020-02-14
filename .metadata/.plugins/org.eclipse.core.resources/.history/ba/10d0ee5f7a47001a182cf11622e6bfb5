@@ -1,0 +1,67 @@
+/**
+ * Copyright NobleProg Ltd
+ * Author: Filip Stachecki (filip@nobleprog.pl)
+ * more info: http://www.nobleprog.co.uk
+ */
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.jbpm.process.instance.impl.demo.SystemOutWorkItemHandler;
+import org.jbpm.test.JbpmJUnitBaseTestCase;
+import org.junit.Test;
+import org.kie.api.KieBase;
+import org.kie.api.KieServices;
+import org.kie.api.runtime.KieContainer;
+import org.kie.api.runtime.KieSession;
+import org.kie.api.runtime.manager.RuntimeEngine;
+import org.kie.api.runtime.process.ProcessInstance;
+import org.kie.internal.KnowledgeBase;
+import org.kie.internal.runtime.StatefulKnowledgeSession;
+import org.kie.api.task.TaskService;
+import org.kie.api.task.model.TaskSummary;
+
+public class Vendedor extends JbpmJUnitBaseTestCase {
+
+	@Test
+	public void testProcess() throws Exception {        
+		createRuntimeManager("vendedor.bpmn");
+		RuntimeEngine engine = getRuntimeEngine(null);
+		KieSession ksession = engine.getKieSession();
+		
+		KieServices ks = KieServices.Factory.get();
+		KieContainer kContainer = ks.getKieClasspathContainer();
+		
+		TaskService taskService = engine.getTaskService();
+		
+		List<TaskSummary> list = taskService.getTasksAssignedAsPotentialOwner("john", "");
+		TaskSummary task = list.get(0);
+	
+		taskService.start(task.getId(), "john");
+		taskService.complete(task.getId(), "john", null);
+
+            
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("sales", 900);
+        ProcessInstance processInstance = ksession.startProcess("com.sample.bpmn", params);
+        assertNodeTriggered(processInstance.getId(),"Bonus Assigned");
+        assertProcessInstanceCompleted(processInstance.getId(), ksession);
+
+	}
+	
+	@Test
+	public void testProcessNoBonus() throws Exception {
+		createRuntimeManager("vendedor.bpmn");
+		RuntimeEngine engine = getRuntimeEngine(null);
+		KieSession ksession = engine.getKieSession();
+		
+
+        Map<String, Object> params = new HashMap<String, Object>();
+        params.put("sales", 900);
+        ProcessInstance processInstance = ksession.startProcess("com.sample.bpmn", params);
+        assertNodeTriggered(processInstance.getId(),"No Bonus");
+        assertProcessInstanceCompleted(processInstance.getId(), ksession);
+
+	}
+}

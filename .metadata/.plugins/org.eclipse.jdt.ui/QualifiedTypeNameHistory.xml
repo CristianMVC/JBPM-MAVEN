@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="jdk.management.resource.ResourceType"/>
+<fullyQualifiedTypeName name="org.drools.KnowledgeBase"/>
+<fullyQualifiedTypeName name="org.drools.runtime.StatefulKnowledgeSession"/>
+<fullyQualifiedTypeName name="org.drools.logger.KnowledgeRuntimeLogger"/>
+<fullyQualifiedTypeName name="org.drools.logger.KnowledgeRuntimeLoggerFactory"/>
+<fullyQualifiedTypeName name="org.drools.builder.KnowledgeBuilder"/>
+<fullyQualifiedTypeName name="org.drools.builder.KnowledgeBuilderFactory"/>
+<fullyQualifiedTypeName name="org.drools.builder.ResourceType"/>
+<fullyQualifiedTypeName name="org.drools.io.ResourceFactory"/>
+<fullyQualifiedTypeName name="org.jbpm.process.workitem.wsht.HornetQHTWorkItemHandler"/>
+<fullyQualifiedTypeName name="org.drools.marshalling.impl.ProtobufMessages.KnowledgeBase"/>
+<fullyQualifiedTypeName name="org.jbpm.examples.checklist.ChecklistContext"/>
+<fullyQualifiedTypeName name="org.jbpm.examples.checklist.ChecklistContextConstraint"/>
+<fullyQualifiedTypeName name="org.jbpm.examples.checklist.ChecklistItem"/>
+<fullyQualifiedTypeName name="org.kie.api.KieBase"/>
+<fullyQualifiedTypeName name="org.kie.api.runtime.manager.RuntimeManager"/>
+<fullyQualifiedTypeName name="org.jbpm.test.JBPMHelper"/>
+<fullyQualifiedTypeName name="javax.persistence.EntityManagerFactory"/>
+<fullyQualifiedTypeName name="javax.persistence.Persistence"/>
+<fullyQualifiedTypeName name="org.kie.api.runtime.manager.RuntimeEnvironmentBuilder"/>
+<fullyQualifiedTypeName name="org.kie.api.runtime.manager.RuntimeManagerFactory"/>
+</qualifiedTypeNameHistroy>
